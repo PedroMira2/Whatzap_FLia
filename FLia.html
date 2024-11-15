@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenhador de Mensagens</title>
+    <link rel="stylesheet" href="FLia.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Desenhador de Mensagens</h1>
+        <form id="formulario">
+            <label for="texto">Texto:</label>
+            <input type="text" id="texto" placeholder="Digite o texto aqui">
+            
+            <label for="formato">Formato:</label>
+            <select id="formato" onchange="ajustarLabel()">
+                <option value="coracao">Coração</option>
+                <option value="estrela">Estrela</option>
+                <option value="quadrado">Quadrado</option>
+                <option value="seta">Seta</option>
+                <option value="onda">Onda</option>
+                <option value="triangulo">Triângulo</option>
+                <option value="zigzag">Zigzag</option>
+                <option value="zigzag2">Zigzag Invertido</option>
+                <option value="diamante">Diamante</option>
+                <option value="x">X</option>
+                <option value="listras">Listras</option>
+                <option value="circular">Circular</option>
+                <option value="espiral">Espiral</option>
+                <option value="zigzag3">Zigzag 3</option>
+                <option value="colunas">Colunas</option>
+                <option value="piramide">Pirâmide</option>
+                <option value="trianguloInverso">Triângulo Inverso</option>
+                <option value="v">V</option>
+                <option value="laço">Laço</option>
+                <option value="onda2">Onda 2</option>
+                <option value="quadrado2">Quadrado 2</option>
+                <option value="estrela2">Estrela 2</option>
+                <option value="espiral2">Espiral 2</option>
+                <option value="labirinto">Labirinto</option>
+                <option value="espiral3">Espiral 3</option>
+            </select>
+            
+            <label for="repeticoes" id="labelRepeticoes">Quantidade de repetições:</label>
+            <input type="number" id="repeticoes" value="3" min="1">
+            
+            <button type="button" onclick="gerarDesenho()">Gerar Desenho</button>
+        </form>
+
+        <div id="resultado">
+            <!-- O desenho gerado será exibido aqui -->
+        </div>
+
+        <!-- Botão para copiar o resultado -->
+        <button id="copiarResultado" onclick="copiarTexto()">Copiar Resultado</button>
+    </div>
+
+    <script src="FLia.js"></script>
+</body>
+</html>
