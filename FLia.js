@@ -60,21 +60,21 @@ function gerarDesenho() {
             }
         } else if (formato === "zigzag2") {
             let deslocamento = 0;
-            let direcao = 1; // Começa indo para a direita
+            let direcao = 1; 
 
             for (let i = 0; i < repeticoes * 2; i++) {
                 desenho += " ".repeat(deslocamento) + texto + "\n";
 
                 // Alterna a direção
                 if (deslocamento === repeticoes - 1) {
-                    direcao = -1;  // Muda para esquerda
+                    direcao = -1;  
                 } else if (deslocamento === 0) {
-                    direcao = 1;   // Muda para direita
+                    direcao = 1;  
                 }
                 deslocamento += direcao;
             }
         }
-        // Novos formatos adicionados:
+       
         else if (formato === "diamante") {
             desenho += `      ${texto}\n`;
             desenho += `   ${texto}   ${texto}\n`;
