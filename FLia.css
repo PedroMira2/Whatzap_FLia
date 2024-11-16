@@ -1,11 +1,11 @@
-/* Resetando alguns estilos padrões */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Configurando o corpo da página */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -16,7 +16,7 @@ body {
     padding: 20px;
 }
 
-/* Container principal */
+
 .container {
     background-color: #fff;
     padding: 30px;
@@ -40,7 +40,7 @@ form {
     gap: 15px;
 }
 
-/* Estilo dos campos de entrada */
+
 label {
     font-size: 1rem;
     color: #333;
@@ -72,7 +72,7 @@ button:hover {
 /* Resultado do desenho */
 #resultado {
     margin-top: 30px;
-    white-space: pre-wrap; /* Mantém a formatação de linhas e espaços */
+    white-space: pre-wrap; 
     background-color: #eaeaea;
     padding: 15px;
     border-radius: 5px;
@@ -82,7 +82,7 @@ button:hover {
     max-height: 300px;
     overflow-y: auto;
 }
-/* Botão de copiar resultado */
+
 #copiarResultado {
     margin-top: 10px;
     background-color: #4CAF50;
